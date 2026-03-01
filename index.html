@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Math Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Creator button top-right -->
+  <button class="creator-btn" onclick="showCreator()">Creator Info - Click Me</button>
+
+  <!-- Main menu -->
+  <div id="menu">
+    <button class="play-btn" onclick="startGame()">Play</button>
+  </div>
+
+  <!-- Game screen -->
+  <div id="game" class="hidden">
+    <div class="top-bar">
+      <span>Level: <span id="level">1</span></span>
+      <span>Time: <span id="timer">10</span></span>
+    </div>
+
+    <div class="question" id="question"></div>
+
+    <input type="number" id="answer" placeholder="Your answer">
+    <button onclick="checkAnswer()">Submit</button>
+
+    <div class="message" id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
